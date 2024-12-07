@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Chris Cata"
+    },
+    "motivations": {
+      "@value": "I want to help the community have a say in decisions that add value to the blockchain with very little waste. I've been engaged with blockchains off and on for the better part of a decade now. Got my start in blockchain with a TED Talk back in 2014 from Charles Hoskinson who laid out simply how and why the future would be decentralized. A couple years later, I was tasked by a friend to look into Ethereum's DAO and how it could be leveraged for state-level voting - they wanted to build their first dApp. I've since worked for a couple of businesses researching how to leverage blockchains to help improve their financial settlement processes - largely in the complex world of logistics. I engaged a few different blockchains over the years, including mining for Bitcoin and other tokens. Eventually, I came full circle and found my way to Cardano ~2019, started to officially engage with others in recent years and decided I was all in on this."
+    },
+    "objectives": {
+      "@value": "I am determined to find and strike a balance in governance actions that impact Cardano’s future, both short and long term. My core goal in participating in governance is to see continuous improvement throughout the ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1qyfvqmw0qgx3am3l7xj8h4mlqk94c4vrzw5nstwkscdxtp4t88xf2h5l6wcg5uze7r2ac5xljr32acfhf60ppkqysvfqapexkl"
+    },
+    "qualifications": {
+      "@value": "20+ years in IT (Cloud, Infrastructure, Services, and Security), Lean Enterprise Certified."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/mr_cata"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Github"
+        },
+        "uri": {
+          "@value": "https://github.com/Tarrant64/mr_cata_gov"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "RYP (Reach Your People)"
+        },
+        "uri": {
+          "@value": "https://www.ryp.io/projects/24"
+        }
+      }
+    ]
+  }
+}
