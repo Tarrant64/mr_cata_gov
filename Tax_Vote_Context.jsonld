@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "After careful consideration, I intend to vote NO on the current proposal to reduce the treasury tax from 20% to 10%. My decision is based on concerns regarding timing, available data, and underlying motivations.\n\nKey Reasons for My Vote: Support for a Reduction—But With Better Clarity I do believe the tax rate should be reduced, and we have historical data indicating how this would impact treasury growth. However, these projections rely on assumptions, particularly regarding spending patterns and future transaction volume. These variables remain uncertain at this time.\n\nLack of Depth in the Proposal The proposal did not provide a comprehensive \"executive summary\" outlining key assumptions and modeling multiple future scenarios (e.g., different budget and transaction volume forecasts). While I have since seen additional data from external sources that help fill these gaps, this information was not included in the original proposal. Given the importance of this decision, such details should have been clearly presented, even if through external links.\n\nConcerns About Timing and Intent The timing of this proposal appears questionable. While the topic has been discussed for some time, I question the urgency. It seems this proposal may serve as an external mechanism to preemptively reduce available treasury funds, potentially influencing budgeting decisions. If the proposal does not consider the current budget status, that is concerning. If it does, and the intent is to shape ongoing budget discussions, that is equally problematic. Given the intelligence of those involved, it is hard to believe this was purely a routine adjustment without consideration of broader implications.\n\nMoving Forward I am open to revisiting this discussion after key financial components are in place, particularly once a formal budget has been established and successfully executed over a reasonable period (ideally within a year). Additionally, any future proposal should include a clear, data-driven executive summary modeling potential outcomes based on known budget values. While I have seen such data after the fact, it should have been included in the proposal itself.\n\nFor these reasons, I will be voting NO on the current proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
